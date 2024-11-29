@@ -6,10 +6,10 @@ const App = () => {
   const [loading, setLoading] = useState(false); // Status loading
   const [error, setError] = useState(null); // Status error
 
-  const API_KEY = "https://newsapi.org/v2/everything?apiKey=5d8c9716e2b648958bafb593a1a90ef2&q=${this.state.searchTerm}"; // Ganti dengan API key Anda
+  const API_KEY = "https://newsapi.org/v2/everything?apiKey=5d8c9716e2b648958bafb593a1a90ef2&q=${this.state.searchTerm}";
   const API_URL = `https://newsapi.org/v2/everything`;
 
-  // Fetch data dari API saat tombol Search diklik
+  
   const fetchArticles = async () => {
     if (!query) return;
     setLoading(true);
